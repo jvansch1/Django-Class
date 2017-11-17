@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>Hello HOME</h1>
+  {% if bool_item %}
+    <p>We are using a {{html_var}} in our templates!!</p>
+  {% endif %}
+  {% for some_item in some_list %}
+    <p>Some Item is {{ some_item }}</p>
+  {% endfor %}
+{% endblock content %}
